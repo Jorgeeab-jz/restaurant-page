@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cherry+Swash:wght@700&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: url('../assets/bg.jpg') no-repeat center center fixed;
+
+}
+.screen{
+    position: absolute;
+    z-index: 15;
+    background-color: rgba(4, 47, 75, 0.1);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+}
+header{
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: rgb(4, 47, 75);
+    display: flex;
+    flex-direction: row;
+}
+.navbar{
+    color: #e84393;
+    width: 100vw;
+}
+.navbar-brand{
+    font-family: 'Berkshire Swash',cursive;
+    color: #e84393;
+    font-size: 30px;
+    cursor: grab;
+}
+.navbar-brand:hover{
+    color: wheat;
+}
+.navbar-toggler{
+    outline-style: none;
+    color: #e84393;
+    font-size: 35px;
+    border: none;
+}
+.navbar-toggler:active{
+  transform: scale(0.95);
+  color: wheat;
+}
+.navbar-nav{
+    background-color: rgb(4, 47, 75);
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    height: 70px;
+}
+.nav-item{
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+    width: 6rem;
+    height: 100%;
+}
+.nav-link{
+    color: #e84393;
+    margin-top: 1rem;
+}
+.nav-link:hover{
+    color: wheat;
+}
+.title{
+    color: #e84393;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+}
+
+@media (max-width: 991px){
+   .nav-item{
+
+       margin-bottom: 1rem;
+       font-size: 22px;
+   }
+   .navbar-nav{
+       height: auto;
+   }
+}
