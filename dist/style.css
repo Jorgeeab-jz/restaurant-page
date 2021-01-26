@@ -7,7 +7,7 @@
     margin: 0;
 }
 body{
-    background: url('../assets/bg.jpg') no-repeat center center fixed;
+    background: url('https://firebasestorage.googleapis.com/v0/b/dulces-vicky.appspot.com/o/bg.jpg?alt=media&token=a0140e95-f377-4a06-a071-f609496ef439') no-repeat center center fixed;
 
 }
 .screen{
