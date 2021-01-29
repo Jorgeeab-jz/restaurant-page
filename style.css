@@ -43,10 +43,16 @@ header{
     color: wheat;
 }
 .navbar-toggler{
-    outline-style: none;
+    outline-style: hidden;
     color: #e84393;
     font-size: 35px;
     border: none;
+    box-shadow: none;
+}
+.navbar-toggler:focus{
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
 }
 .navbar-toggler:active{
   transform: scale(0.95);
