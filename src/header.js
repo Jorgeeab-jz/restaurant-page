@@ -4,8 +4,7 @@ function renderHeader (){
 
     let header = document.createElement('header');
     let navbar = document.createElement('nav');
-    navbar.classList.add('navbar');
-    navbar.classList.add('navbar-expand-lg');
+    navbar.classList.add('navbar','navbar-expand-lg');
     let title = document.createElement('a');
     title.classList.add('navbar-brand');
     title.innerText = "Vicky's Sweets";
@@ -17,18 +16,14 @@ function renderHeader (){
     togglerBtn.dataset.bsToggle = 'collapse';
     togglerBtn.dataset.bsTarget = '#navbarNav';
     let icon = document.createElement('i');
-    icon.classList.add('fas');
-    icon.classList.add('fa-bars');
+    icon.classList.add('fas','fa-bars');
     togglerBtn.append(icon);
     let listCont = document.createElement('div');
-    listCont.classList.add('collapse');
-    listCont.classList.add('navbar-collapse');
+    listCont.classList.add('collapse','navbar-collapse');
     listCont.setAttribute('id','navbarNav');
 
     let linksCont = document.createElement('ul');
-    linksCont.classList.add('navbar-nav');
-    linksCont.classList.add('nav-fill');
-    linksCont.classList.add('w-100');
+    linksCont.classList.add('navbar-nav','nav-fill','w-100');
 
     navItems.forEach(item=>{
         let itemLi = document.createElement('li');
