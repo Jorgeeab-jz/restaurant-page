@@ -3,6 +3,15 @@ function renderHeader (){
     let navItems = ['Inicio','Menú','Contacto'];
 
     let header = document.createElement('header');
+    let backG = document.createElement('img');
+    let screen = document.createElement('div');
+    let hero = document.createElement('h1');
+    hero.classList.add('hero');
+    hero.innerText = 'Endulza tu día';
+    screen.classList.add('screen');
+    backG.src = 'https://firebasestorage.googleapis.com/v0/b/dulces-vicky.appspot.com/o/bg.jpg?alt=media&token=a0140e95-f377-4a06-a071-f609496ef439'
+    backG.classList.add('head-bg');
+    header.append(backG,screen,hero);
     let navbar = document.createElement('nav');
     navbar.classList.add('navbar','navbar-expand-lg');
     let title = document.createElement('a');
