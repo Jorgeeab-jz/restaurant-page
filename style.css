@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Cherry+Swash:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
 *,*::before,*::after{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-body{
-    background: url('https://firebasestorage.googleapis.com/v0/b/dulces-vicky.appspot.com/o/bg.jpg?alt=media&token=a0140e95-f377-4a06-a071-f609496ef439') no-repeat center center fixed;
-
-}
 .screen{
     position: absolute;
-    z-index: 15;
-    background-color: rgba(4, 47, 75, 0.1);
+    z-index: 5;
+    background-color: rgba(76,57,57,.45);
     width: 100vw;
-    height: 100vh;
+    height: 250px;
     top: 0;
     bottom: 0;
 }
@@ -24,20 +20,31 @@ header{
     z-index: 20;
     top: 0;
     width: 100vw;
-    height: 70px;
-    background-color: rgb(4, 47, 75);
+    height: 250px;
     display: flex;
     flex-direction: row;
+    overflow: hidden;
+}
+.head-bg{
+    position: absolute;
+    left: -50px;
+    width: 120vw;
+    height: auto;
+    z-index: 0;
 }
 .navbar{
+    position: relative;
+    z-index: 20;
     color: #e84393;
     width: 100vw;
+    display: inline-block;
 }
 .navbar-brand{
     font-family: 'Berkshire Swash',cursive;
     color: #e84393;
     font-size: 30px;
     cursor: grab;
+    text-shadow: 1px 1px 2px black;
 }
 .navbar-brand:hover{
     color: wheat;
@@ -57,15 +64,22 @@ header{
 .navbar-toggler:active{
   transform: scale(0.95);
   color: wheat;
+  outline: none;
+  outline-style: none;
+  box-shadow: none;
 }
 .navbar-nav{
-    background-color: rgb(4, 47, 75);
+    position: relative;
+    z-index: 20;
+    text-align: end;
     width: 100vw;
     text-align: center;
     margin: auto;
     height: 70px;
 }
 .nav-item{
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px black;
     margin: auto;
     text-align: center;
     cursor: pointer;
@@ -73,25 +87,24 @@ header{
     height: 100%;
 }
 .nav-link{
-    color: #e84393;
-    margin-top: 1rem;
+    color: white;
 }
 .nav-link:hover{
     color: wheat;
 }
-.title{
-    color: #e84393;
-    font-family: 'Berkshire Swash', cursive;
-    margin-top: 1rem;
-    margin-left: 0.7rem;
-}
-
-.logo img{
-    width: 150px;
-    height: auto;
+.hero{
     position: absolute;
-    top: -1rem;
-    left: -1rem;
+    top: 7rem;
+    left: 15%;
+    z-index: 20;
+    margin: auto;
+    text-align: center;
+    text-decoration: wavy;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: 'Indie Flower', cursive;
 }
 
 @media (max-width: 991px){
@@ -102,5 +115,7 @@ header{
    }
    .navbar-nav{
        height: auto;
+       background-color: rgba(76,57,57,.65);
    }
+   
 }
