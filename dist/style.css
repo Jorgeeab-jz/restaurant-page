@@ -121,7 +121,6 @@ header{
     color: white;
     text-align: center;
 }
-
 .footer-container span {
     color: #e84393;
     font-size: 1.2rem;
@@ -203,8 +202,6 @@ header{
     transform: scale(0.95);
     background-color: #b1122a;
 }
-
-
 @media (max-width: 991px){
    .nav-item{
        font-size: 22px;
