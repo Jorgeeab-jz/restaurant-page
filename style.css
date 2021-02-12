@@ -23,6 +23,12 @@ header{
     height: 150px;
     display: flex;
     flex-direction: row;
+}
+.background-container{
+    top: 0;
+    width: 100vw;
+    height: 150px;
+    position: fixed;
     overflow: hidden;
 }
 .head-bg{
@@ -33,7 +39,7 @@ header{
 }
 .navbar{
     position: relative;
-    z-index: 20;
+    z-index: 100;
     color: #e84393;
     width: 100vw;
     display: inline-block;
@@ -107,18 +113,19 @@ header{
     font-family: 'Indie Flower', cursive;
 }
 .footer-container{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100vw;
     height: 100px;
-    background-color: rgba(76,57,57,.35);
+    background-color: rgba(0,0,0,.75);
     color: white;
     text-align: center;
 }
 
 .footer-container span {
-    text-shadow: 1px 1px 1px rgba(76,57,57,.85);
-    font-size: 1.1rem;
+    color: #e84393;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 .social{
     margin: auto;
@@ -148,13 +155,65 @@ header{
     font-size: 2rem;
     margin-top: 15%;
 }
+.home-wrapper{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+.title-wrapper{
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    border-bottom: 1px solid rgba(76,57,57,.08);
+}
+.title{
+    font-family: 'Cherry Swash', cursive;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.logo-wrapper{
+    margin: auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+.logo-wrapper img{
+    width: 250px;
+    height: auto;
+}
+.button-wrapper{
+    margin-top: 2rem;
+}
+.button-wrapper button{
+    font-family: 'Indie Flower',cursive;
+    font-size: 22px;
+    color: white;
+    width: 150px;
+    height: 70px;
+    border: none;
+    border-radius: 15px;
+    background-color: #dc2743;
+    outline-style: none;
+}
+.button-wrapper button:active{
+    transform: scale(0.95);
+    background-color: #b1122a;
+}
+
+
 @media (max-width: 991px){
    .nav-item{
        font-size: 22px;
+       margin-top: 1rem;
+       margin-bottom: 1rem;
    }
    .navbar-nav{
        height: auto;
-       background-color: rgba(76,57,57,.65);
+       background-color: rgba(76,57,57,.95);
    }
    
 }
