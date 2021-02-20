@@ -1,3 +1,4 @@
+import dulcesData from './index.js';
 
 function renderHome (){
     let homeWrapper = document.createElement('div');
