@@ -113,7 +113,7 @@ header{
     font-family: 'Indie Flower', cursive;
 }
 .footer-container{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100vw;
     height: 100px;
@@ -201,6 +201,24 @@ header{
 .button-wrapper button:active{
     transform: scale(0.95);
     background-color: #b1122a;
+}
+
+.menu-container{
+    text-align: center;
+    margin-top: 11rem;
+}
+.description{
+    width: 95vw;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    margin-left: 1rem;
+    border-bottom: 1px dotted rgba(0,0,0,.35);
+}
+.item-name{
+    text-align: left;
+    font-size: 15px;
+    width: 1rem;
 }
 @media (max-width: 991px){
    .nav-item{
