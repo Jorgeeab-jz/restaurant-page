@@ -23,6 +23,7 @@ function renderHome (){
     let buttonWrapper = document.createElement('div');
     buttonWrapper.classList.add('button-wrapper');
     let button = document.createElement('button');
+    button.classList.add('action-btn');
     button.setAttribute('id','main-btn');
     button.innerText = 'Haz tu pedido';
     buttonWrapper.append(button);

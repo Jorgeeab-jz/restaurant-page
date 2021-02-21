@@ -20,8 +20,9 @@ function renderMenu (products) {
             itemName.classList.add('item-name');
             itemName.innerText = value2.name;
             let itemPrice = document.createElement('span');
-
-            descriptionCont.append(itemName);
+            itemPrice.classList.add('item-price');
+            itemPrice.innerText = value2.price + '$';
+            descriptionCont.append(itemName,itemPrice);
             itemCont.append(descriptionCont);
         }
 

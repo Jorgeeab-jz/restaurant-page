@@ -2,20 +2,39 @@ import header from './header'
 import footer from './footer';
 import home from './home';
 import menu from './menu';
-
+import contact from './contact';
 
 const content = document.getElementById('content');
 
-
-content.append(header(),home(),footer())
+content.append(header(),home(),footer());
+document.getElementById('main-btn').addEventListener('click', showMenu);
+addListeners();
 
 function showMenu () {
     content.innerHTML = '';
     content.append(header(),menu(productList),footer());
+    addListeners();
 }
 
+function showContact () {
+    content.innerHTML = '';
+    content.append(header(),contact(),footer());
+    addListeners();
+}
 
-document.getElementById('main-btn').addEventListener('click', showMenu);
+function showHome () {
+    content.innerHTML = '';
+    content.append(header(),home(),footer());
+    addListeners();
+    document.getElementById('main-btn').addEventListener('click', showMenu);
+}
+
+function addListeners () {
+    document.getElementById('inicio').addEventListener('click', showHome);
+    document.getElementById('menú').addEventListener('click', showMenu);
+    document.getElementById('contacto').addEventListener('click', showContact);
+}
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyBhEEjKEDyuJQ0fXY0R3VyMvssNEffLaMI",

@@ -41,8 +41,8 @@ function renderHeader (){
         let itemLi = document.createElement('li');
         let text = document.createElement('a');
         itemLi.classList.add('nav-item');
-        itemLi.setAttribute('id',item)
         text.classList.add('nav-link');
+        text.setAttribute('id',item.toLowerCase());
         text.innerText = item;
         itemLi.append(text);
         linksCont.append(itemLi);

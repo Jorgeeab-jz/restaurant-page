@@ -4,7 +4,7 @@ function renderFooter (){
         {
             'name': 'instagram',
             'icon': ['fab','fa-instagram'],
-            'link': 'www.google.com'
+            'link': 'https://www.google.com'
         },
         {
             'name': 'whatsapp',
