@@ -113,11 +113,11 @@ header{
     font-family: 'Indie Flower', cursive;
 }
 .footer-container{
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100vw;
     height: 100px;
-    background-color: rgba(0,0,0,.75);
+    background-color: rgba(50,50,50,1);
     color: white;
     text-align: center;
 }
@@ -187,7 +187,7 @@ header{
 .button-wrapper{
     margin-top: 2rem;
 }
-.button-wrapper button{
+.action-btn{
     font-family: 'Indie Flower',cursive;
     font-size: 22px;
     color: white;
@@ -198,17 +198,22 @@ header{
     background-color: #dc2743;
     outline-style: none;
 }
-.button-wrapper button:active{
+.action-btn:active{
     transform: scale(0.95);
     background-color: #b1122a;
 }
-
+#send-btn{
+    margin-top: 2rem;
+}
 .menu-container{
     text-align: center;
     margin-top: 11rem;
+    margin-bottom: 8rem;
 }
 .description{
-    width: 95vw;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: left;
@@ -218,7 +223,26 @@ header{
 .item-name{
     text-align: left;
     font-size: 15px;
-    width: 1rem;
+}
+.item-price{
+    position: absolute;
+    right: 1rem;
+}
+.contact-container {
+    margin-top: 11rem;
+    margin-bottom: 5rem;
+}
+.message-container{
+    margin: auto;
+    text-align: center;
+}
+.message-text{
+    outline-style: none;
+    border: none;
+    box-shadow: 1px 1px 6px rgba(0,0,0,.45);
+    width: 60vw;
+    height: 20vw;
+    resize: none;
 }
 @media (max-width: 991px){
    .nav-item{
